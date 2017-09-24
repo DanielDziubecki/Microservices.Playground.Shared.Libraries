@@ -1,0 +1,8 @@
+language: csharp
+mono: none
+dotnet: 2.0.0
+script:
+  - dotnet restore
+  - dotnet build ./Order.Contracts/Order.Contracts.sln
+  - dotnet build ./Payment.Contracts/Payment.Contracts.sln
+  - dotnet build ./Logging/Logging.sln
